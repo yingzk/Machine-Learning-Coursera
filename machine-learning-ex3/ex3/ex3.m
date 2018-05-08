@@ -35,6 +35,9 @@ fprintf('Loading and Visualizing Data ...\n')
 load('ex3data1.mat'); % training data stored in arrays X, y
 m = size(X, 1);
 
+% can use imshow command see the digit.
+% imshow(reshape(X(1,:), 20, 20))
+
 % Randomly select 100 data points to display
 rand_indices = randperm(m);
 sel = X(rand_indices(1:100), :);
